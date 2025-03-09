@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'Sans-serif';
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    width: 100%;
+    height: 100vh; /* Use viewport height for full screen */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: column;
+}
+
+#logo {
+    width: 20vw;
+    max-width: 150px; /* Limit max width for larger screens */
+}
+
+h1 {
+    color: aliceblue;
+    font-family: "Roboto Slab", serif;
+    text-align: center; /* Center text for better appearance */
+}
+
+#name {
+    color: rgb(236, 7, 121);
+    font-size: 2.5rem; /* Use rem for better scalability */
+}
+
+#va {
+    color: rgb(7, 213, 236);
+    font-size: 2.5rem; /* Use rem for better scalability */
+}
+
+#voice {
+    width: 150px;
+    display: none;
+}
+
+#btn {
+    width: 80%; /* Make button width responsive */
+    max-width: 300px; /* Limit max width for larger screens */
+    background: linear-gradient(to right, rgb(21, 145, 207), rgb(201, 41, 116));
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1.2rem; /* Use rem for better scalability */
+    border-radius: 20px;
+    color: white;
+    box-shadow: 2px 2px 10px rgb(21, 145, 207), 2px 2px 10px rgb(201, 41, 116);
+    border: none;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+#btn:hover {
+    box-shadow: 2px 2px 20px rgb(21, 145, 207), 2px 2px 20px rgb(201, 41, 116);
+    letter-spacing: 2px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    #logo {
+        width: 30vw; /* Increase logo size on smaller screens */
+    }
+
+    #name, #va {
+        font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+
+    #btn {
+        font-size: 1rem; /* Adjust button font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    #logo {
+        width: 40vw; /* Further increase logo size on very small screens */
+    }
+
+    #name, #va {
+        font-size: 1.5rem; /* Further adjust font size for very small screens */
+    }
+
+    #btn {
+        font-size: 0.9rem; /* Further adjust button font size for very small screens */
+    }
+}
